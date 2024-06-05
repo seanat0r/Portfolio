@@ -1,0 +1,44 @@
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    width: 97vw;
+    border: 1px solid #000;
+    box-shadow: #00000050 4px 4px 10px;
+}
+.navtitle>h1 {
+    letter-spacing: 0.35rem;
+    font-weight: 750;
+}
+.navSystem {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+.navList {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+.homeCircle, .aboutMeCircle, .projectsCircle, .linksCircle {
+    display: grid;
+    grid-template-areas: 'l r';
+    padding: 0.5rem;
+}
+.homePic, .aboutMePic, .projectsPic, .linksPic {
+    float: left;
+    grid-area: l;
+}
+.home, .aboutMe, .projects, .links {
+    margin: 0 0.5rem 0 1rem;
+    padding: 0 0 0 0.75rem;
+    width: 5.5rem;
+    grid-area: r;
+    align-self: center;
+}
+.home ::before, .aboutMe ::before, .projects ::before, .links ::before {
+    height: 52px;
+} 

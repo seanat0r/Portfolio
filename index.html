@@ -7,19 +7,33 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/reset.css" type="text/css">
     <script src="/js/script.js" defer></script>
+    <script src="/js/isInIndex.js"></script>
 </head>
 <body>
     <header>
         <nav>
+            <div class="placeHolder"></div>
            <div class="navtitle">
             <h1>CHRISTOPHE GR&Auml;DEL PORTFOLIO</h1>
            </div>
            <div class="navSystem">
-            <ul>
-                <li id="home" class="home"><a href="/index.html">Home</a></li>
-                <li id="aboutMe" class="abotMe"><a href="/about.html">Über Mich</a></li>
-                <li id="projecs" class="Projects"><a href="/projects.html">Projekte</a></li>
-                <li id="links" class="links"><a href="/links.html">Links</a></li>
+            <ul class="navList">
+                <span id="homeCircle" class="homeCircle">
+                    <img src="/img/icon/home_icon.png" alt="house" class="homePic">
+                    <li id="home" class="home"><a href="/index.html">Home</a></li>
+                </span>
+                <span class="aboutMeCircle">
+                    <img src="/img/icon/about_me_icon.png" alt="human" class="aboutMePic">
+                    <li id="aboutMe" class="aboutMe"><a href="/about.html">Über Mich</a></li>
+                </span>
+                <span class="projectsCircle">
+                    <img src="/img/icon/projects_icon.png" alt="document with a cog" class="projecsPic">
+                    <li id="projecs" class="projects"><a href="/projects.html">Projekte</a></li>
+                </span>
+                <span class="linksCircle">
+                    <img src="/img/icon/links_icon.png" alt="linksymbol" class="linksPic">
+                    <li id="links" class="links"><a href="/links.html">Links</a></li>
+                </span>
             </ul>
            </div>
 
