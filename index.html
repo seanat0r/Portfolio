@@ -19,24 +19,79 @@
            </div>
            <div class="navSystem">
             <ul class="navList">
-                <span id="homeCircle" class="homeCircle">
-                    <img src="/img/icon/home_icon.png" alt="house" class="homePic">
-                    <li id="home" class="home"><a href="/index.html">Home</a></li>
-                </span>
-                <span class="aboutMeCircle">
-                    <img src="/img/icon/about_me_icon.png" alt="human" class="aboutMePic">
-                    <li id="aboutMe" class="aboutMe"><a href="/about.html">Über Mich</a></li>
-                </span>
-                <span class="projectsCircle">
-                    <img src="/img/icon/projects_icon.png" alt="document with a cog" class="projecsPic">
-                    <li id="projecs" class="projects"><a href="/projects.html">Projekte</a></li>
-                </span>
-                <span class="linksCircle">
-                    <img src="/img/icon/links_icon.png" alt="linksymbol" class="linksPic">
-                    <li id="links" class="links"><a href="/links.html">Links</a></li>
-                </span>
+                <li class="navItem">
+                    <a href="/index.html" class="navLink" id="homeCircle">
+                        <span class="navCircle homeCircle">
+                            <img src="/img/icon/home_icon.png" alt="house" class="navPic homePic">
+                        </span>
+                        <span class="navText">Home</span>
+                    </a>
+                    <div id="toggleMenuHome">
+                        <ul class="navMenu">
+                            <ul class="NavMenuUL">
+                                <li class="NavMenuLI">Home</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem">
+                    <a href="/about.html" class="navLink" id="aboutCircle">
+                        <span class="navCircle aboutMeCircle">
+                            <img src="/img/icon/about_me_icon.png" alt="human" class="navPic aboutMePic">
+                        </span>
+                        <span class="navText">Über Mich</span>
+                    </a>
+                    <div id="toggleMenuHomeAboutMe">
+                        <ul class="navMenu">
+                            <li class="NavMenuLI">School</li>
+                                <li class="NavMenuLI">Appren- ticeship</li>
+                                <li class="NavMenuLI">My experience in Coding</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem">
+                    <a href="/projects.html" class="navLink" id="projectsCircle">
+                        <span class="navCircle projectsCircle">
+                            <img src="/img/icon/projects_icon.png" alt="document with a cog" class="navPic projectsPic">
+                        </span>
+                        <span class="navText">Projekte</span>
+                    </a>
+                    <div id="toggleMenuHomeProjects">
+                        <ul class="navMenu">
+                            <li class="NavMenuLI">mixed Messages</li>
+                                <li class="NavMenuLI"></li>
+                                <li class="NavMenuLI"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navItem">
+                    <a href="/links.html" class="navLink" id="linkCircle">
+                        <span class="navCircle linksCircle">
+                            <img src="/img/icon/links_icon.png" alt="linksymbol" class="navPic linksPic">
+                        </span>
+                        <span class="navText">Links</span>
+                    </a>
+                    <div id="toggleMenuHomeLink">
+                        <ul class="navMenu">
+                            <li class="NavMenuLI">E-Mail</li>
+                            <li class="NavMenuLI">Number</li>
+                            <li class="NavMenuLI">LinkedIn</li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
            </div>
+           <div class="navSystemPhone">
+                <div id="navPhone">
+                    <ul>
+                        <a href="/index.html"><li>Home</li></a>
+                        <a href="/about.html"><li>Über mich</li></a>
+                        <a href="/projects.html"></a><li>Projekte</li></a>
+                        <a href="/links.html"></a><li>Links</li></a>   
+                    </ul>
+                </div>
+           </div>
+           
 
         </nav>
         <aside>
@@ -52,43 +107,6 @@
             </div>
             <div class="spaceHolders"></div>
         </aside>
-        <div id="toggleMenu">
-            <div class="NavBarMenu">
-                <div class="MenuBox">
-                    <div class="MenuGrid">
-                        <div class="GridHome">
-                            <ul class="NavMenuUL">
-                                <li class="NavMenuLI">Home</li>
-                            </ul>
-                        </div>
-                        <div class="GridAboutMe">
-                            <ul class="NavMenuUL">
-                                <li class="NavMenuLI">School</li>
-                                <li class="NavMenuLI">Apprenticeship</li>
-                                <li class="NavMenuLI">My experience in Coding</li>
-                            </ul>
-                        </div>
-                        <div class="GridProjects">
-                            <ul class="NavMenuUL">
-                                <li class="NavMenuLI">mixedMessages</li>
-                                <li class="NavMenuLI"></li>
-                                <li class="NavMenuLI"></li>
-                            </ul>
-                        </div>
-                        <div class="GridLinks">
-                            <ul class="NavMenuUL">
-                                <li class="NavMenuLI">E-Mai</li>
-                                <li class="NavMenuLI">Phonenumber</li>
-                                <li class="NavMenuLI">LinkedIn</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="AsideMenue">
-
-            </div>
-        </div>
     </header>
     <main>
         <p class="test"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit, recusandae quis a ipsa quas natus hic quod obcaecati commodi distinctio ex atque asperiores nisi debitis! Sit culpa excepturi unde eveniet laudantium aspernatur libero sequi impedit nam perspiciatis, consectetur architecto ullam aperiam placeat fuga cumque neque minus quasi incidunt maxime labore quibusdam? Magnam eveniet fugiat tempora iusto perferendis. Dolorem assumenda id pariatur magnam obcaecati rem quos recusandae excepturi alias repellat omnis quisquam quis aliquid, expedita ipsa molestiae modi at adipisci? Sed tenetur, dolores iure dolorum repellendus, aperiam iste dolore aliquam, temporibus minus ab debitis rem similique dolor. Distinctio, velit illum. Ut nisi at nemo eaque a similique ipsam, debitis distinctio ducimus voluptate. Architecto magni facere sequi. Ex obcaecati ipsa suscipit voluptatem magni non accusamus impedit qui dolores voluptas doloremque, nisi corrupti possimus earum laudantium odit debitis quae officia nulla cum sed est iusto velit? Nisi repellendus optio veritatis commodi quaerat quae impedit illum quo excepturi beatae architecto deserunt nemo iusto iste doloribus ab officia repellat, provident odio placeat magnam delectus expedita nam. Repudiandae sequi vero nulla temporibus optio accusantium fuga rerum architecto. Quasi, error obcaecati nostrum voluptas illo, provident ad exercitationem voluptatem amet sunt hic doloremque fugit veniam ratione nam, qui optio? Unde quos, nihil nostrum magni sequi tempora repellat consequuntur, distinctio rem, suscipit eius adipisci voluptate earum laborum nam cupiditate reprehenderit. Modi maxime corrupti ducimus delectus maiores et est ratione repellendus reprehenderit culpa. Illo, maxime totam. Optio rerum odit doloribus adipisci nostrum quaerat praesentium officia consequatur at, sit voluptatibus totam ducimus animi est voluptas, reiciendis expedita, exercitationem hic! Voluptas eius nobis labore esse quibusdam nisi sequi rerum voluptate dolores perferendis deserunt, praesentium cumque accusamus omnis alias error, libero ducimus numquam iure earum iusto ratione nemo? Tenetur, tempore rem exercitationem dignissimos, laudantium voluptates vel nulla libero doloremque laboriosam asperiores odit enim velit minus illum hic aperiam ex in eos, fugit saepe quidem explicabo tempora. Recusandae illo nisi asperiores quae nihil voluptate nam autem soluta. Repudiandae repellendus a at blanditiis deserunt assumenda reiciendis quia fugiat quo? Nulla esse excepturi provident quo ullam tenetur, consequatur ad accusamus cupiditate at fugiat laboriosam dolore cumque mollitia asperiores harum iusto? Expedita dolor dolores perspiciatis illo, deleniti in nihil libero magni fugit quasi magnam pariatur esse, fuga rem reprehenderit hic distinctio vero aliquid laborum doloribus eius! Libero nihil aut rerum, iste modi eos dolores ducimus quas perferendis. Quos adipisci rerum itaque nisi ipsam nulla odio magni nemo animi debitis assumenda distinctio obcaecati, sunt laborum dolor explicabo recusandae sapiente quam repellendus. Quisquam qui, minus, expedita saepe eveniet iure quae perferendis, voluptate rerum nisi odio quasi placeat cumque. Rem explicabo unde reiciendis. Aliquam expedita eveniet nesciunt ea deserunt ratione quibusdam voluptas. Fugiat minus, dolor soluta quis voluptates officia non possimus repellendus adipisci rerum fuga. Debitis, placeat laboriosam, libero iusto provident natus odit aspernatur assumenda distinctio rerum optio exercitationem itaque voluptas doloremque voluptatibus consectetur ea sed asperiores. Accusamus illo quisquam doloremque beatae omnis totam et reiciendis velit dolorum, provident numquam magnam! Accusamus excepturi maiores eum dignissimos sequi amet error vero quidem repudiandae eos voluptatibus reprehenderit debitis delectus sed maxime id, quo fugit. Deserunt eveniet officia ratione, nemo maxime dolorum, nihil quasi sunt delectus necessitatibus sequi suscipit incidunt ducimus quisquam illum. Omnis quam pariatur voluptatum cumque reprehenderit exercitationem perferendis reiciendis rem cum. Expedita dolores quam ullam impedit. Dolore esse ad eligendi magnam commodi eaque dolorem sequi? Animi eligendi itaque asperiores sit reiciendis voluptatum placeat quod maiores fugiat voluptatem labore ipsa nulla impedit aut sunt similique, quam fugit. Vitae reprehenderit culpa perspiciatis voluptate numquam consequatur delectus ea officia, adipisci labore velit molestias doloribus alias fuga non incidunt tenetur modi accusantium minus earum. Dignissimos corporis itaque sunt quasi molestiae expedita et error consequuntur ut id minima modi nam architecto iste, culpa, maiores aliquid atque, harum nesciunt amet adipisci omnis similique. Cum blanditiis mollitia eius debitis quaerat voluptatem. Quasi neque quas porro dolorem. Ipsam, reiciendis officia exercitationem quod inventore consequuntur adipisci ab. Iusto quisquam nulla veniam labore, soluta eos reiciendis deleniti, dicta magnam iste illo explicabo accusamus, voluptas nisi corporis quo ipsa dignissimos voluptatum minima fugiat dolor atque blanditiis ullam beatae. Vitae porro praesentium amet beatae, omnis sint voluptates nesciunt odio magni, est cumque adipisci dolorum nihil in aliquam distinctio? Tenetur dolor quia iusto adipisci fugiat, corporis atque neque velit cupiditate, repudiandae quo sequi nihil repellat eveniet nesciunt laudantium. Fugit sint dolore autem deserunt repudiandae adipisci, fugiat rem error, accusamus vitae modi nisi. Itaque placeat aspernatur, officiis obcaecati cum illum velit tenetur quibusdam accusamus eaque eveniet laborum alias aliquam accusantium dolorum nesciunt repudiandae consectetur, aut assumenda porro distinctio odio? Error, aperiam dolorum. Accusantium a mollitia error, quo deserunt nesciunt excepturi aut, quae animi culpa ipsa. Placeat perferendis rem reprehenderit reiciendis quae dolorum quasi quos provident maiores inventore architecto accusantium nostrum perspiciatis, odit corrupti, ut quo. Quia culpa ut facilis odio aspernatur, aliquid ipsum dolor inventore deserunt repellat? Dolorum, doloribus repellendus ipsa sit, iure itaque ea eveniet recusandae laborum animi, vel officiis odio! Fugit adipisci iste ab earum dicta provident odit aspernatur sed distinctio praesentium tenetur sit voluptatibus ratione tempore velit libero, voluptates sint, esse asperiores dolorem! Tempora blanditiis soluta, aut ut dolorem necessitatibus voluptas architecto quas earum corrupti qui, non esse incidunt sequi sapiente, vel nesciunt maiores optio asperiores sint quae. Ea, vel! Fugiat consequuntur ab ut minima odit quidem. Distinctio id ducimus officiis possimus tempora, molestias voluptatem eveniet earum, sed repudiandae quasi soluta illum esse ex dolore suscipit unde, laborum saepe nemo amet dolores doloribus dolor sint dolorum? Reprehenderit distinctio commodi atque ipsum velit repellendus necessitatibus dolorem minima totam earum aliquam id eaque nisi ipsam hic dolore, eum illo quod, est sint eligendi nam consequatur modi. Natus sequi, quibusdam ea fugit suscipit a, eveniet laudantium voluptas similique dolor recusandae quos repellat porro, perferendis odio amet itaque? Illum repellat, fugit voluptatum officiis maxime adipisci iste dolore praesentium quibusdam qui! Delectus doloribus consequuntur quas perspiciatis quae, sequi nulla voluptatem praesentium iste consectetur pariatur veritatis facere tempore, rem dolor molestias totam expedita ea quod, sapiente repellat sint laborum? Soluta iure consequuntur ratione sint ipsum ullam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe asperiores at incidunt dolores quasi. Temporibus, delectus rerum culpa eligendi quaerat, in omnis doloribus fugit obcaecati facilis ullam saepe voluptatem illum.

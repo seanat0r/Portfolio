@@ -5,9 +5,13 @@ const moreBoxHoverEffect = () => {
     let thirdRow = document.getElementById('thirdRow');
     let navBarExtended = false;
 
-    let toggleMenuDiv = document.getElementById('toggleMenu')
+    let toggleMenuDivHome = document.getElementById('toggleMenuHome');
+    let toggleMenuDivAbout = document.getElementById('toggleMenuHomeAboutMe');
+    let toggleMenuDivProjects = document.getElementById('toggleMenuHomeProjects');
+    let toggleMenuDivLink = document.getElementById('toggleMenuHomeLink');
+    let toggleMenuDivPhone = document.getElementById('navPhone');
 
-    const toggleNavBar = () => {
+    const toggleNavBarAnimation = () => {
         if (!navBarExtended) {
             navBarExtended = true;
             thirdRow.classList.remove('rotateBackThirdRow');
@@ -44,13 +48,21 @@ const moreBoxHoverEffect = () => {
 
     const toggleNavBarMenu = () => {
         if (!navBarExtended) {
-            toggleMenuDiv.style.display = 'none';
+            toggleMenuDivHome.style.display = 'none';
+            toggleMenuDivAbout.style.display = 'none';
+            toggleMenuDivProjects.style.display = 'none';
+            toggleMenuDivLink.style.display = 'none';
+            toggleMenuDivPhone.style.display = 'none';
         } else {
-            toggleMenuDiv.style.display = 'block';
+            toggleMenuDivHome.style.display = 'block';
+            toggleMenuDivAbout.style.display = 'block';
+            toggleMenuDivProjects.style.display = 'block';
+            toggleMenuDivLink.style.display = 'block';
+            toggleMenuDivPhone.style.display = 'block';
         }
     }
 
-    moreBox.addEventListener(('click'), toggleNavBar);
+    moreBox.addEventListener(('click'), toggleNavBarAnimation);
     toggleNavBarMenu()
 };
 
