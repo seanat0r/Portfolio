@@ -8,7 +8,7 @@
 body {
     background-color: #F5F5F5;
 }
-nav {
+nav, aside {
     background-color: #e0e0e0;
 }
 li {
