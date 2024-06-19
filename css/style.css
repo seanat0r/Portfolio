@@ -1,3 +1,4 @@
+/* HEADER */
 @media only screen and (min-width: 1400px) {
     /* NAVBAR */
     nav {
@@ -716,6 +717,45 @@
     }
 } 
 /* BODY */
-.test {
-    margin: 90px 0 0 70px;
+@media only screen and (min-width: 1px) {
+    /* Main Text */
+    .gridMainText {
+        display: grid;
+        grid-template-areas: 'pictures title1 title2'
+                             'pictures text text';
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0 2rem;
+    }
+    .MainTitleFirst {
+        grid-area: title1;
+        justify-self: center;
+        align-self: center;
+    }
+    .MainTitleSecond {
+        grid-area: title2;
+        justify-self: start;
+        align-self: center;
+        margin-top: 5rem;
+    }
+    .MainPic {
+        grid-area: pictures;
+        justify-self: center;
+    }
+    .picOfMe {
+        height: 43rem;
+        width: auto;
+        border: 2px solid #000;
+    }
+    .MainPicFigcaption {
+        position: absolute;
+        top: 48rem;
+    }
+    .Maintext {
+        grid-area: text;
+        justify-self: center;
+        text-align: center;
+        padding: 2rem;
+        border: 2px dotted #000;
+    }
 }
