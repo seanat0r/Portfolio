@@ -66,4 +66,21 @@ const moreBoxHoverEffect = () => {
     toggleNavBarMenu()
 };
 
+const animationDiaShowHome = () => {
+    let position = 0;
+    let animationID1 = document.getElementById('animationID1');
+    let animationID2 = document.getElementById('animationID2');
+    let animationID3 = document.getElementById('animationID3')
+    let animationID4 = document.getElementById('animationID4');
+
+    setInterval ( () => {
+        position += 1;
+        animationID1.style.left = position + 'px';
+
+        if (position > window.innerWidth) {
+            position = -50;
+        }
+    }, 50);
+}
 moreBoxHoverEffect();
+animationDiaShowHome();

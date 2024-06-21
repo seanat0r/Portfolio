@@ -803,6 +803,9 @@
         width: 12.125rem;
         margin: 0 0 0 0.5rem;
     }
+    .firstProjects {
+        position: absolute;
+    }
     .firstProjectsImg {
         grid-area: r;
         justify-self: center;
