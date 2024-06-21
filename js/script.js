@@ -67,19 +67,37 @@ const moreBoxHoverEffect = () => {
 };
 
 const animationDiaShowHome = () => {
-    let position = 0;
+    let position1 = 0;
+    let position2 = 390;
+    let position3 = 780;
+    let position4 = 1170;
     let animationID1 = document.getElementById('animationID1');
     let animationID2 = document.getElementById('animationID2');
     let animationID3 = document.getElementById('animationID3')
     let animationID4 = document.getElementById('animationID4');
 
     setInterval ( () => {
-        position += 1;
-        animationID1.style.left = position + 'px';
+        position1 += 1;
+        position2 += 1;
+        position3 += 1;
+        position4 += 1;
+        animationID1.style.left = position1 + 'px';
+        animationID2.style.left = position2 + 'px';
+        animationID3.style.left = position3 + 'px';
+        animationID4.style.left = position4 +'px';
 
-        if (position > window.innerWidth) {
-            position = -50;
-        }
+        if (position1 > window.innerWidth) {
+            position1 = -50;
+        };
+        if (position2 > window.innerWidth) {
+            position2 = -50;
+        };
+        if (position3 > window.innerWidth) {
+            position3 = -50;
+        };
+        if (position4 > window.innerWidth) {
+            position4 = -50;
+        };
     }, 50);
 }
 moreBoxHoverEffect();

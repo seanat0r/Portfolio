@@ -771,7 +771,6 @@
     }
     .animationLane {
         display: flex;
-        flex-wrap: nowrap;
         width: 100vw;
         height: 9.375rem;
         margin-top: 2rem;
@@ -813,6 +812,9 @@
         float: right;
         height: 9rem;
         width: 10rem;
+    }
+    .secondProjects {
+        position: absolute;
     }
     .underConstructionImg {
         float: right;
