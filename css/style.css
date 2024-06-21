@@ -725,25 +725,28 @@
                              'pictures text text';
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 0 2rem;
     }
     .MainTitleFirst {
         grid-area: title1;
-        justify-self: center;
+        justify-self: end;
         align-self: center;
+        text-align: center;
     }
     .MainTitleSecond {
         grid-area: title2;
         justify-self: start;
         align-self: center;
+        width: 9.975rem;
         margin-top: 5rem;
+        text-align: center;
     }
     .MainPic {
+        height: 43.7rem;
         grid-area: pictures;
         justify-self: center;
     }
     .picOfMe {
-        height: 43rem;
+        height: 43.7rem;
         width: auto;
         border: 2px solid #000;
     }
@@ -757,5 +760,59 @@
         text-align: center;
         padding: 2rem;
         border: 2px dotted #000;
+    }
+    /* AnimationLane */
+    .projectsDiaShow {
+        width: 88.0625rem;
+        margin-top: 2rem; 
+    }
+    .projectsDiaShow h2 {
+        text-align: center;
+    }
+    .animationLane {
+        display: flex;
+        width: 100vw;
+        height: 9.375rem;
+        margin-top: 2rem;
+    }
+    .projectsSize {
+        height: 9.375rem;
+        width: 24.25rem;
+        max-height: 9.375rem;
+        max-width: 24.25rem;
+        margin: 0 1px 0 1px;
+        border: 1px solid #000;
+    }
+    .infoProjects {
+        display: grid;
+        grid-template-areas: 'l r';
+        height: 9.375rem;
+    }
+    .infoProjects h3 {
+        grid-area: l;
+        justify-self: center;
+        align-self: flex-start;
+        text-align: center;
+        margin: 0.5rem 0 0 0;
+    }
+    .infoProjects p {
+        grid-area: l;
+        justify-self: center;
+        align-self: center;
+        width: 12.125rem;
+        margin: 0 0 0 0.5rem;
+    }
+    .firstProjectsImg {
+        grid-area: r;
+        justify-self: center;
+        align-self: center;
+        float: right;
+        height: 9rem;
+        width: 10rem;
+    }
+    .underConstructionImg {
+        float: right;
+        height: 9rem;
+        width: 10rem;
     }
 }
