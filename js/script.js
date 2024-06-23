@@ -67,38 +67,45 @@ const moreBoxHoverEffect = () => {
 };
 
 const animationDiaShowHome = () => {
-    let position1 = 0;
-    let position2 = 390;
-    let position3 = 780;
-    let position4 = 1170;
+    const minDistance = 100;
     let animationID1 = document.getElementById('animationID1');
     let animationID2 = document.getElementById('animationID2');
-    let animationID3 = document.getElementById('animationID3')
+    let animationID3 = document.getElementById('animationID3');
     let animationID4 = document.getElementById('animationID4');
 
-    setInterval ( () => {
-        position1 += 1;
-        position2 += 1;
-        position3 += 1;
-        position4 += 1;
-        animationID1.style.left = position1 + 'px';
-        animationID2.style.left = position2 + 'px';
-        animationID3.style.left = position3 + 'px';
-        animationID4.style.left = position4 +'px';
+    let positions = [
+        { element: animationID1, position: 0 },
+        { element: animationID2, position: 390 },
+        { element: animationID3, position: 780 },
+        { element: animationID4, position: 1170 }
+    ];
 
-        if (position1 > window.innerWidth) {
-            position1 = -50;
-        };
-        if (position2 > window.innerWidth) {
-            position2 = -50;
-        };
-        if (position3 > window.innerWidth) {
-            position3 = -50;
-        };
-        if (position4 > window.innerWidth) {
-            position4 = -50;
-        };
-    }, 50);
-}
+    const animate = () => {
+        positions.forEach(obj => {
+            obj.position += 0.5; // Bewegung um 0.5 Pixel pro Frame
+            obj.element.style.left = obj.position + 'px';
+            if (obj.position > window.innerWidth) {
+                obj.position = -50; // Zurücksetzen, wenn das Element den Bildschirm verlässt
+            }
+        });
+
+        adjustPositions(); // Anpassung der Positionen bei Bedarf
+
+        requestAnimationFrame(animate);
+    };
+
+    const adjustPositions = () => {
+        positions.sort((a, b) => a.position - b.position);
+
+        for (let i = 1; i < positions.length; i++) {
+            if (positions[i].position - positions[i - 1].position < minDistance) {
+                positions[i].position = positions[i - 1].position + minDistance;
+                positions[i].element.style.left = positions[i].position + 'px'; // Aktualisieren der DOM-Position
+            }
+        }
+    };
+
+    animate(); // Starten der Animation
+};
 moreBoxHoverEffect();
 animationDiaShowHome();
