@@ -66,4 +66,44 @@ const moreBoxHoverEffect = () => {
     toggleNavBarMenu()
 };
 
+const carouselFunction = () => {
+ const slides = Array.from(document.querySelectorAll('.slide'));
+ const prevButton = document.getElementById('slider-arrow-prev');
+ const nextButton = document.getElementById('slider-arrow-next');
+ const slideContainer = document.getElementById('slides-container');
+ let slidIndex = 0;
+
+ const updateCurrentSlide = () => {
+    slides.forEach((slide, index) => {
+        if (index === slidIndex) {
+            slide.classList.add('current-slide');
+        } else {
+            slide.classList.remove('current-slide');
+        }
+    });
+    slides[slidIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+ };
+
+ prevButton.addEventListener('click', () => {
+    if (slidIndex > 0) {
+        slidIndex--;
+    } else {
+        slidIndex = slides.length - 1;
+    }
+    updateCurrentSlide();
+ });
+ 
+ nextButton.addEventListener('click', () => {
+    if (slidIndex < slides.length -1) {
+        slidIndex++;
+    } else {
+        slidIndex = 0;
+    }
+
+    updateCurrentSlide();
+ });
+
+ updateCurrentSlide();
+}
 moreBoxHoverEffect();
+carouselFunction();

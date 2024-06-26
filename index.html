@@ -121,38 +121,48 @@
                 Wenn ihr auf „Über mich“ klickt bekommt ihr Infos über mein Schulisches und Beruflichen Werdegang.
                 Auf „Projekte“ findet ihr alle meine Projekte. Unten auf dieser Seite sieht ihr meine besten Projekten</p>
         </article>
-        <section class="projectsDiaShow">
+        <section class="carousel">
             <h2>Meine Beste Projekte</h2>
-            <div class="animationLane">
-                <div class="firstProjects projectsSize" id="animationID1">
-                    <span class="infoProjects"> 
-                        <h3>mixedMessages</h3>
-                        <p>Ein Javascript programm, das verschiedene, zufällige "Witze" erstellt</p>
-                        <img src="/img/pic/mixedMessagePic.jpeg" alt="Javascript codesnippet" class="firstProjectsImg">
-                    </span>
-                    </div>
-                <div class="secondProjects projectsSize" id="animationID2">
-                    <span class="infoProjects">
-                        <h3>under construction</h3>
-                        <p>ToDoList mit Kalenderfunktion</p>
-                        <img src="/img/pic/underConstruction.jpeg" alt="construction work" class="underConstructionImg">
-                    </span>
+            <div class="carousel-position">
+                <div class="slider-wrapper">
+                    <button class="slider-arrow" id="slider-arrow-prev">
+                        &#8249;
+                    </button>
+                    <button class="slider-arrow" id="slider-arrow-next">
+                        &#8250;
+                    </button>
+                    <ul class="slides-container" id="slides-container">
+                        <li class="slide">
+                            <h3>mixedMessages</h3>
+                            <div class="slide-content-grid">
+                                <p>Generiert verschiedene "Witze". Der Fokus dieses Projekt war die Syntaxe von JS.</p>
+                                <img src="/img/pic/mixedMessagePic.jpeg" alt="codesnap from mixedMessages">
+                            </div>
+                        </li>
+                        <li class="slide current-slide">
+                            <h3>In Bearbeitung ...</h3>
+                            <div class="slide-content-grid">
+                                <p>Eine Kalender-App mit intregierter To Do List</p>
+                                <img src="/img/pic/underConstruction.jpeg" alt="On working, symbolic">
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <h3>In Bearbeitung ...</h3>
+                            <div class="slide-content-grid">
+                                <p>Füller, Nichts</p>
+                                <img src="/img/pic/underConstruction.jpeg" alt="On working, symbolic">
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <h3>In Bearbeitung ...</h3>
+                            <div class="slide-content-grid">
+                                <p>Füller, Nichts</p>
+                                <img src="/img/pic/underConstruction.jpeg" alt="On working, symbolic">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="secondProjects projectsSize" id="animationID3">
-                    <span class="infoProjects">
-                        <h3>under construction</h3>
-                        <p>Nicht definiert</p>
-                        <img src="/img/pic/underConstruction.jpeg" alt="construction work" class="underConstructionImg">
-                    </span>
-                    <div class="secondProjects projectsSize" id="animationID4">
-                        <span class="infoProjects">
-                            <h3>under construction</h3>
-                            <p>Nicht definiert</p>
-                            <img src="/img/pic/underConstruction.jpeg" alt="construction work" class="underConstructionImg">
-                        </span>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </section>
     </main>
     <footer>
