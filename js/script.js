@@ -67,10 +67,9 @@ const moreBoxHoverEffect = () => {
 };
 
 const carouselFunction = () => {
- const slides = Array.from(document.querySelectorAll('.slide'));
- const prevButton = document.getElementById('slider-arrow-prev');
- const nextButton = document.getElementById('slider-arrow-next');
- const slideContainer = document.getElementById('slides-container');
+ let slides = Array.from(document.querySelectorAll('.slide'));
+ let prevButton = document.getElementById('slider-arrow-prev');
+ let nextButton = document.getElementById('slider-arrow-next');
  let slidIndex = 0;
 
  const updateCurrentSlide = () => {
