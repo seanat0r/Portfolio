@@ -66,46 +66,44 @@ const moreBoxHoverEffect = () => {
     toggleNavBarMenu()
 };
 
-const animationDiaShowHome = () => {
-    const minDistance = 100;
-    let animationID1 = document.getElementById('animationID1');
-    let animationID2 = document.getElementById('animationID2');
-    let animationID3 = document.getElementById('animationID3');
-    let animationID4 = document.getElementById('animationID4');
+const carouselFunction = () => {
+ const slides = Array.from(document.querySelectorAll('.slide'));
+ const prevButton = document.getElementById('slider-arrow-prev');
+ const nextButton = document.getElementById('slider-arrow-next');
+ const slideContainer = document.getElementById('slides-container');
+ let slidIndex = 0;
 
-    let positions = [
-        { element: animationID1, position: 0 },
-        { element: animationID2, position: 390 },
-        { element: animationID3, position: 780 },
-        { element: animationID4, position: 1170 }
-    ];
-
-    const animate = () => {
-        positions.forEach(obj => {
-            obj.position += 0.5; // Bewegung um 0.5 Pixel pro Frame
-            obj.element.style.left = obj.position + 'px';
-            if (obj.position > window.innerWidth) {
-                obj.position = -50; // Zurücksetzen, wenn das Element den Bildschirm verlässt
-            }
-        });
-
-        adjustPositions(); // Anpassung der Positionen bei Bedarf
-
-        requestAnimationFrame(animate);
-    };
-
-    const adjustPositions = () => {
-        positions.sort((a, b) => a.position - b.position);
-
-        for (let i = 1; i < positions.length; i++) {
-            if (positions[i].position - positions[i - 1].position < minDistance) {
-                positions[i].position = positions[i - 1].position + minDistance;
-                positions[i].element.style.left = positions[i].position + 'px'; // Aktualisieren der DOM-Position
-            }
+ const updateCurrentSlide = () => {
+    slides.forEach((slide, index) => {
+        if (index === slidIndex) {
+            slide.classList.add('current-slide');
+        } else {
+            slide.classList.remove('current-slide');
         }
-    };
+    });
+    slides[slidIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+ };
 
-    animate(); // Starten der Animation
-};
+ prevButton.addEventListener('click', () => {
+    if (slidIndex > 0) {
+        slidIndex--;
+    } else {
+        slidIndex = slides.length - 1;
+    }
+    updateCurrentSlide();
+ });
+ 
+ nextButton.addEventListener('click', () => {
+    if (slidIndex < slides.length -1) {
+        slidIndex++;
+    } else {
+        slidIndex = 0;
+    }
+
+    updateCurrentSlide();
+ });
+
+ updateCurrentSlide();
+}
 moreBoxHoverEffect();
-animationDiaShowHome();
+carouselFunction();
