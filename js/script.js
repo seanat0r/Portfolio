@@ -103,6 +103,11 @@ const carouselFunction = () => {
  });
 
  updateCurrentSlide();
-}
+};
+const galleryFunction = () => {
+
+};
+
 moreBoxHoverEffect();
 carouselFunction();
+galleryFunction();
