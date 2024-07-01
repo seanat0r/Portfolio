@@ -952,13 +952,32 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 35rem;
     }
     #gallery-img {
         height: 10rem;
         width: auto;
     }
+    .gallery-text {
+        margin: 0.75rem;
+    }
+    #t2, #t3, #t4 {
+        display: none;
+    }
     .button-wrapper {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+    .gallery-button {
+        padding: 0.7rem;
+        border-radius: 25px;
+        background-color: #0377c9;
+        border-color: #000;
+    }
+    .gallery-button:hover {
+        background-color: #DCEAF4;
     }
 }
+/* FOOTER */
