@@ -238,7 +238,7 @@
         justify-content: space-around;
         align-items: center;
         float: right;
-        width: 99vw;
+        width: 100%;
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
         box-shadow: #00000050 4px 4px 10px;
@@ -474,7 +474,7 @@
         justify-content: space-around;
         align-items: center;
         float: right;
-        width: 100vw;
+        width: 100%;
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
         box-shadow: #00000050 4px 4px 10px;
@@ -717,8 +717,11 @@
     }
 } 
 /* BODY */
-@media only screen and (min-width: 1px) {
+@media only screen and (min-width: 992px) {
     /* Main Text */
+    .gridMainTextForPhone {
+        display: none;
+    }
     .gridMainText {
         display: grid;
         grid-template-areas: 'pictures title1 title2'
@@ -759,9 +762,13 @@
         justify-self: center;
         text-align: center;
         padding: 2rem;
+        margin-left: 0.5rem;
         border: 2px dotted #000;
     }
     /* Carousel */
+    .image-galleryPhone {
+        display: none;
+    }
     .carousel {
         display: flex;
         flex-direction: column;
@@ -875,3 +882,102 @@
         width: 243.383px;
       }
 }
+@media only screen and (min-width: 1px) and (max-width: 991px) {
+    /* Main Text */
+    .gridMainText {
+        display: none;
+    }
+    .gridMainTextForPhone {
+        display: grid;
+        grid-template-areas: 'title'
+                             'pictures '
+                             'text';
+        grid-template-rows: auto;
+        gap: 1rem;
+        width: 100%;
+    } 
+    .MainTitlet {
+        grid-area: title;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .MainPic {
+        height: 43.7rem;
+        grid-area: pictures;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+    .picOfMe {
+        height: 43.7rem;
+        width: auto;
+        border: 2px solid #000;
+    }
+    .MainPicFigcaption {
+        position: absolute;
+        top: 48rem;
+    }
+    .Maintext {
+        grid-area: text;
+        justify-self: center;
+        text-align: center;
+        padding: 2rem;
+        margin-left: 0.5rem;
+        border: 2px dotted #000;
+    }
+    /* Carousel -> Gallery */
+    .carousel {
+        display: none;
+    }
+    .image-galleryPhone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .image-galleryPhone h2 {
+        margin-bottom: 0.5rem;
+    }
+    .gallery-pic {
+        margin-bottom: 1rem;
+    }
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35rem;
+    }
+    #gallery-img {
+        height: 10rem;
+        width: auto;
+    }
+    .gallery-text {
+        margin: 0.75rem;
+    }
+    #t2, #t3, #t4 {
+        display: none;
+    }
+    .button-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+    .gallery-button {
+        padding: 0.7rem;
+        border-radius: 25px;
+        background-color: #0377c9;
+        border-color: #000;
+    }
+    .gallery-button:hover {
+        background-color: #DCEAF4;
+    }
+}
+/* FOOTER */

@@ -16,6 +16,10 @@ li {
 }
 main {
     margin: 6rem 1rem 1rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 p {
     color: #333333;
@@ -28,4 +32,9 @@ p {
 .slides-container::-webkit-scrollbar { 
     width: 0;
     height: 0;
+}
+@media only screen and (min-width: 1px) and (max-width: 991px) {
+    main {
+        margin: 4.5rem 1rem 1rem 1rem;
+    }
 }
